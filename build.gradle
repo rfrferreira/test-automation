@@ -1,0 +1,41 @@
+group 'testautomation'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.41.0'
+
+    // https://mvnrepository.com/artifact/org.assertj/assertj-core
+    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.8.0'
+
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testCompile group: 'org.testng', name: 'testng', version: '6.11'
+
+    // https://mvnrepository.com/artifact/info.cukes/cucumber-java
+    compile group: 'info.cukes', name: 'cucumber-java', version: '1.2.5'
+
+    // https://mvnrepository.com/artifact/info.cukes/cucumber-core
+    compile group: 'info.cukes', name: 'cucumber-core', version: '1.2.5'
+
+    // https://mvnrepository.com/artifact/info.cukes/cucumber-junit
+    testCompile group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
+
+    // https://mvnrepository.com/artifact/info.cukes/gherkin
+    provided group: 'info.cukes', name: 'gherkin', version: '2.12.2'
+
+    // https://mvnrepository.com/artifact/io.cucumber/gherkin
+    compile group: 'io.cucumber', name: 'gherkin', version: '4.1.3'
+
+
+
+}
