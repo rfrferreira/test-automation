@@ -12,7 +12,7 @@ Then, when you create you Java project with Gradle, you're able to manage your d
 
 Just like this, I can have all the dependencies I need to my project available:
 
-´´´Gradle
+```Java
 
 group 'testautomation'
 version '1.0-SNAPSHOT'
@@ -52,4 +52,4 @@ dependencies {
     // https://mvnrepository.com/artifact/io.cucumber/gherkin
     compile group: 'io.cucumber', name: 'gherkin', version: '4.1.3'
 }
-´´´
+```
